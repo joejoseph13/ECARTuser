@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            Your Shop Name
+        </a>
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                </li>
+                </ul>
+                <div class="d-flex me-5" >
+                    <!-- Display these buttons if the user is not logged in -->
+                    <ng-container *ngIf="!isLoggedIn(); else loggedIn">
+                        <button class="btn btn-login me-3 " routerLink="/auth/login" type="button">Login</button>
+                        <button class="btn btn-signup " routerLink="/auth/signup" type="button">Signup</button>
+                    </ng-container>
+                
+                    <!-- Display the profile icon when the user is logged in -->
+                    <ng-template #loggedIn>
+                        <a class="nav-link text-dark " routerLink="/userlanding/userprofile">
+                            
+                            <i class="fa-solid fa-circle-user"style="font-size: 30px;"></i>
+                        </a>
+                    </ng-template>
+                </div>
+            
+        </div>
+    </div>
+  </nav>
+  
+  

@@ -1,0 +1,14 @@
+/* Updated CSS without unnecessary properties */
+.card2 {
+    border: 1px solid #dae6ee;
+}
+
+.btn1 {
+    border-radius: 5px;
+    width: 160px;
+    height: 35px;
+}
+
+.t2 {
+    color: #78b689;
+}

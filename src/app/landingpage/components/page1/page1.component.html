@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <img src="assets/Frame 6.png" alt="img" class="w-100">
+  </div>
+  <button class="btn btn-success mt-5 ms-5">Product Category</button>
+  
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Category Cards -->
+      <div class="col-lg-2 col-sm-2 col-md-4   mb-4" *ngFor="let item of categoryData">
+        <div class="card category-card">
+          <img src="data:image/png;base64,{{item.image}}"class="card-img-top img-fluid" alt="{{ item.name }}">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <button  class="btn btn-outline-success category-button mt-2 p-2 rounded-pill">View Category</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  
+  <!-- <div class="container mt-5">
+    <div class="row">
+    
+      <div class="col-lg-2 col-sm-2 col-md-4 mb-4" *ngFor="let product of products">
+        <div class="card product-card">
+          <img [src]="product.image" class="card-img-top img-fluid" alt="{{ product.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text">Price: {{ product.price }}</p>
+            <button  class="btn btn-success buy-button" [routerLink]="['/userOrder/placeorder']">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->

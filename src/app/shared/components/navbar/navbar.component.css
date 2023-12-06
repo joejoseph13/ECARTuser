@@ -1,0 +1,25 @@
+.navbar {
+    background-color: white;
+    color: black;
+  }
+
+
+
+  .navbar-brand,
+  .navbar-text {
+    color: black;
+  }
+
+  .nav-item:hover .nav-link {
+    color: green;
+  }
+
+  .btn-login {
+    background-color: green;
+    color: white;
+  }
+
+  .btn-signup {
+    background-color: beige;
+    color: green;
+  }

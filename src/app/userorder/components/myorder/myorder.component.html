@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <div class="row justify-content-start">
+      <div class="col-9 d-flex flex-column">
+          <div class="col py-2 mt-5" *ngFor="let ordered of orderedItems">
+              <div class="card card2" style="width: 25rem;">
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <img height="60" class="card-img img-fluid" [src]="'data:image/png;base64,' + ordered?.productImage" alt="Card image cap">
+                      <table class="table mt-3">
+                          <tbody>
+                              <tr>
+                                  <td>Product Total</td>
+                                  <td></td>
+                                  <td>{{ ordered?.total_price }}</td>
+                              </tr>
+                              <tr>
+                                  <td>Discount</td>
+                                  <td></td>
+                                  <td>%10<span class="text-muted">(100/-)</span></td>
+                              </tr>
+                              <tr>
+                                  <td>Delivery fee</td>
+                                  <td></td>
+                                  <td>Free</td>
+                              </tr>
+                              <tr>
+                                  <th class="t2">Total</th>
+                                  <td></td>
+                                  <th class="t2">120</th>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <button type="button" class="btn btn-primary btn1" (click)="deletemyorder(ordered?.order_id)">CANCEL ORDER</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+
+  
+  .category-button {
+    background-color: beige;
+    color: green;
+    border: none;
+   
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .category-button:hover {
+    background-color: green;
+    color: beige;
+  }
+  
+  /* Other styles here */
+  
+
+  
+  
+  
+  /* card styles */
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .category-card img {
+    max-width: 100px;
+    max-height: 60px;
+  }
+  
+  .category-name {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  
+ 
+  
+  

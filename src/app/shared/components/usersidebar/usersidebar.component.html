@@ -1,0 +1,17 @@
+<div class="sidebar">
+    <div class="sidebar-header" *ngIf="userdetails">
+      <h3 class="mb-4">{{userdetails.name}}</h3>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a routerLink="/userlanding/userorder/myorder"><i class="fa-solid fa-file-invoice"></i>My Orders</a>
+      </li>
+      <li class="list-group-item">
+        <a routerLink="/userlanding" ><i class="fa-solid fa-id-badge"></i> Profile </a>
+      </li>
+      <li class="list-group-item">
+        <a routerLink="/userlanding/userorder/orderhistory"><i class="fa-solid fa-file-invoice"></i>Order History</a>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,24 @@
+<div class="container mt-5 me-5">
+    <div class="row">
+      
+      <div class="col-md-9  ">
+        <div class="profile-card ">
+          
+          <div class="profile-card-body mt-5 " >
+            <div class="row ">
+              <div class="col-md-4 ">
+                <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
+              </div>
+              <div class="col-md-8"  *ngIf="userdetails">
+                <h4 class="profile-name">{{userdetails.name}}</h4>
+                <p class="profile-info">Email:{{userdetails?.email}}</p>
+                <p class="profile-info">Phone:{{userdetails?.phone}}</p>
+                <p class="profile-info">Address:{{userdetails?.address}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
